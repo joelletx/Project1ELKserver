@@ -37,9 +37,9 @@ _Note: Use the [Markdown Table Generator](http://www.tablesgenerator.com/markdow
 | Name     | Function | IP Address | Operating System |
 |----------|----------|------------|------------------|
 | Jump Box | Gateway  | 10.0.0.1   | Linux            |
-| TODO     |          |            |                  |
-| TODO     |          |            |                  |
-| TODO     |          |            |                  |
+| Web 1    | Host     | 10.0.0.5   | Linux            |
+| Web 2    | Host     | 10.0.0.6   | Linux            |
+| ELK      | ELK Host | 10.1.0.0   | Linux            |
 
 ### Access Policies
 
@@ -55,9 +55,9 @@ A summary of the access policies in place can be found in the table below.
 
 | Name     | Publicly Accessible | Allowed IP Addresses |
 |----------|---------------------|----------------------|
-| Jump Box | Yes/No              | 10.0.0.1 10.0.0.2    |
-|          |                     |                      |
-|          |                     |                      |
+| Jump Box | Yes/No              | 24.27.40.137         |
+| Web 1&2  | Yes/No              | 10.0.0.1             |
+| ELK      | Yes/No              | 10.0.0.1             |
 
 ### Elk Configuration
 
@@ -91,4 +91,3 @@ SSH into the control node and follow the steps below:
 - Update the ansible configuration file to include an ELK group with your ELK server IP, and a webservers folder with your Web server IP addresses for the Filebeat/Metricbeat installation.
 - Run the playbook, and navigate to http://[your ELK server public IP]:5601/app/kibana to check that the installation worked as expected._
 
-_As a **Bonus**, provide the specific commands the user will need to run to download the playbook, update the files, etc._
