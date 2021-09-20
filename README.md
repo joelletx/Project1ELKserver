@@ -32,7 +32,6 @@ Integrating an ELK server allows users to easily monitor the vulnerable VMs for 
 - _Metricbeat helps monitor servers by collecting metrics from the system and services running._
 
 The configuration details of each machine may be found below.
-_Note: Use the [Markdown Table Generator](http://www.tablesgenerator.com/markdown_tables) to add/remove values from the table_.
 
 | Name     | Function | IP Address | Operating System |
 |----------|----------|------------|------------------|
@@ -81,7 +80,7 @@ We have installed the following Beats on these machines:
 - _Filebeat and Metricbeat_
 
 These Beats allow us to collect the following information from each machine:
-- _TODO: In 1-2 sentences, explain what kind of data each beat collects, and provide 1 example of what you expect to see. E.g., `Winlogbeat` collects Windows logs, which we use to track user logon events, etc._
+- _Filebeat allows us to keep an eye on changes made to system logs, making it easier to see any unusual activity. Metricbeat will allow us to monitor our servers by collecting from the systems and services running._
 
 ### Using the Playbook
 In order to use the playbook, you will need to have an Ansible control node already configured. Assuming you have such a control node provisioned: 
