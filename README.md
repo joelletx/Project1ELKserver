@@ -46,7 +46,7 @@ _Note: Use the [Markdown Table Generator](http://www.tablesgenerator.com/markdow
 The machines on the internal network are not exposed to the public Internet. 
 
 Only the ELK machine can accept connections from the Internet. Access to this machine is only allowed from the following IP addresses:
-- _24.27.40.137_
+- _Workstation IP_
 
 Machines within the network can only be accessed by jump box.
 - _The jump box virtual machine is allowed to connect via SSH to the ELK server. The IP is 40.83.170.117._
@@ -55,9 +55,9 @@ A summary of the access policies in place can be found in the table below.
 
 | Name     | Publicly Accessible | Allowed IP Addresses |
 |----------|---------------------|----------------------|
-| Jump Box | Yes/No              | 24.27.40.137         |
-| Web 1&2  | Yes/No              | 10.0.0.1             |
-| ELK      | Yes/No              | 10.0.0.1             |
+| Jump Box | No                  | Workstation IP       |
+| Web 1&2  | No                  | 10.0.0.1             |
+| ELK      | No                  | 10.0.0.1/WS IP       |
 
 ### Elk Configuration
 
